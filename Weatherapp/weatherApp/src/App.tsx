@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const fetchApi = async () => {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=6b07d7aa964ac5bbd6c7413e833114fd`;
+      
       const response = await fetch(url);
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const resjson = await response.json();
